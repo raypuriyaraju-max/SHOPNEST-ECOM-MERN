@@ -13,7 +13,8 @@ connectDB();
 
 const app = express();
 
-// Set CORS for frontend URL / allow single-node deploy
+// Set CORS for frontend URL / allow single-node deplo
+// Copy this code exactly
 app.use(cors({
   origin: ['http://localhost:3000', 'https://shopnest-ecom-mern-1-2s81.onrender.com'],
   credentials: true
