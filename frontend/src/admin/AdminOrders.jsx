@@ -7,7 +7,7 @@ const AdminOrders = () => {
 
   useEffect(() => {
     const fetchOrders = async () => {
-      const res = await fetch('https://shopnest-ecom-mern-o9nu.onrender.com', {
+      const res = await fetch('https://shopnest-ecom-mern-1-2s81.onrender.com', {
         headers: { Authorization: `Bearer ${user.token}` }
       });
       const data = await res.json();
@@ -19,7 +19,7 @@ const AdminOrders = () => {
   }, [user]);
 
   const updateStatus = async (id, status) => {
-    const res = await fetch(`https://shopnest-ecom-mern-o9nu.onrender.com`, {
+    const res = await fetch(`https://shopnest-ecom-mern-1-2s81.onrender.com`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${user.token}` },
       body: JSON.stringify({ status })

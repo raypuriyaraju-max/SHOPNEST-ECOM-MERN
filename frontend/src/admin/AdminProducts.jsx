@@ -8,7 +8,7 @@ const AdminProducts = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const res = await fetch('https://shopnest-ecom-mern-o9nu.onrender.com');
+      const res = await fetch('https://shopnest-ecom-mern-1-2s81.onrender.com');
       const data = await res.json();
       setProducts(Array.isArray(data) ? data : []);
     };
@@ -19,7 +19,7 @@ const AdminProducts = () => {
   if (!window.confirm('Delete this product?')) return;
 
   try {
-    const res = await fetch(`https://shopnest-ecom-mern-o9nu.onrender.com`, {
+    const res = await fetch(`https://shopnest-ecom-mern-1-2s81.onrender.com`, {
       method: 'DELETE',
       headers: {
         Authorization: `Bearer ${user.token}`
