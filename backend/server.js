@@ -15,7 +15,7 @@ const app = express();
 
 // Set CORS for frontend URL / allow single-node deploy
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://shopnest-ecom-mern-1-2s81.onrender.com'],
+  origin: "*";
   credentials: true
 }));
 
