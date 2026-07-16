@@ -52,13 +52,13 @@ const Checkout = () => {
           }
           const rzp1 = new window.Razorpay(options);
           rzp1.open();
-          const verifyRes = await fetch('http://localhost:5000/api/payments/verify', {
+          const verifyRes = await fetch('https://shopnest-ecom-mern-o9nu.onrender.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(response)
           });
           if (verifyRes.ok) {
-            const saveOrderRes = await fetch('http://localhost:5000/api/orders', {
+            const saveOrderRes = await fetch('https://shopnest-ecom-mern-o9nu.onrender.com', {
               method: 'POST',
               headers: { 
                 'Content-Type': 'application/json',
@@ -106,7 +106,7 @@ const Checkout = () => {
   };
 
   const bypassPayment = async () => {
-    const saveOrderRes = await fetch("http://localhost:5000/api/orders", {
+    const saveOrderRes = await fetch("https://shopnest-ecom-mern-o9nu.onrender.com", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",

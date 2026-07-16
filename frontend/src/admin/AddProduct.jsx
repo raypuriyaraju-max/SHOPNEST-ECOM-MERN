@@ -31,7 +31,7 @@ const AddProduct = () => {
     data.append('image', image);
 
     try {
-      const res = await fetch('http://localhost:5000/api/products', {
+      const res = await fetch('https://shopnest-ecom-mern-o9nu.onrender.com', {
         method: 'POST',
         headers: { Authorization: `Bearer ${user.token}` },
         body: data

@@ -8,7 +8,7 @@ const Home = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const res = await fetch('http://localhost:5000/api/products');
+                const res = await fetch('https://shopnest-ecom-mern-o9nu.onrender.com');
                 const data = await res.json();
                 setProducts(data.slice(0, 4)); // Featured products
             } catch (error) {

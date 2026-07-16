@@ -16,7 +16,7 @@ const AdminDashboard = () => {
 
     const fetchStats = async () => {
       try {
-        const res = await fetch('/api/analytics', {
+        const res = await fetch('https://shopnest-ecom-mern-o9nu.onrender.com', {
           headers: { Authorization: `Bearer ${user.token}` }
         });
         const data = await res.json();

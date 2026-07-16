@@ -7,7 +7,7 @@ const AdminUsers = () => {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const res = await fetch('/api/auth/users', {
+      const res = await fetch('https://shopnest-ecom-mern-o9nu.onrender.com', {
         headers: { Authorization: `Bearer ${user.token}` }
       });
       const data = await res.json();
