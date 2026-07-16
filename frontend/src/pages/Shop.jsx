@@ -10,7 +10,7 @@ const Shop = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch('https://shopnest-ecom-mern-1-2s81.onrender.com');
+        const res = await fetch('https://shopnest-ecom-mern-1-2s81.onrender.com/api/products');
         const data = await res.json();
         setProducts(data);
       } catch (error) {

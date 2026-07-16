@@ -17,7 +17,7 @@ const Profile = () => {
     }
     const fetchMyOrders = async () => {
       try {
-        const res = await fetch('https://shopnest-ecom-mern-1-2s81.onrender.com', {
+        const res = await fetch('https://shopnest-ecom-mern-1-2s81.onrender.com/api/orders/myorders', {
           headers: { Authorization: `Bearer ${user.token}` }
         });
         const data = await res.json();
